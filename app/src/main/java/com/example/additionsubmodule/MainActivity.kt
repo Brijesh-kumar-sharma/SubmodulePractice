@@ -28,8 +28,7 @@ class MainActivity : AppCompatActivity() {
             job?.cancel()
             job = GlobalScope.launch(Dispatchers.Main) {
                 if (text != null) {
-                    if(text.isNotEmpty())
-                    {
+                    if (text.isNotEmpty()) {
                         callFunction(text)
                     }
 
